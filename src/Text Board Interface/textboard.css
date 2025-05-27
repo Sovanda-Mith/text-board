@@ -1,6 +1,6 @@
 @media only screen and (min-width: 991px) {
   body {
-    background-image: url(/photo/bg-screen.png);
+    background-image: url(../../photo/bg-screen.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -99,7 +99,7 @@
   }
 
   #scrolltext {
-    background-image: url(/photo/default-background.png);
+    background-image: url(../../photo/default-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -253,13 +253,13 @@
     cursor: pointer;
   }
   .btn1 {
-    background-image: url(/photo/bg-background.png);
+    background-image: url(../../photo/bg-background.png);
     width: 60px;
     height: 50px;
     margin-bottom: 10%;
   }
   .btn2 {
-    background-image: url(/photo/text-icon.png);
+    background-image: url(../../photo/text-icon.png);
     width: 80px;
     height: 70px;
     margin-bottom: 5%;
@@ -272,7 +272,7 @@
     margin-top: 85%;
   }
   .btn-start {
-    background-image: url(/photo/bg-start.png);
+    background-image: url(../../photo/bg-start.png);
     background-color: transparent;
     background-size: cover;
     color: #e0035d;
@@ -315,7 +315,7 @@
 }
 @media only screen and (max-width: 991px) {
   body {
-    background-image: url(/photo/bg-screen-mobile.png);
+    background-image: url(../../photo/bg-screen-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -349,7 +349,7 @@
   }
 
   #scrolltext {
-    background-image: url(/photo/default-background.png);
+    background-image: url(../../photo/default-background.png);
     width: 60%;
     height: 90px;
     margin-top: 10%;
@@ -475,13 +475,13 @@
     cursor: pointer;
   }
   .btn1 {
-    background-image: url(/photo/bg-background.png);
+    background-image: url(../../photo/bg-background.png);
     width: 60px;
     height: 50px;
     margin-bottom: 10%;
   }
   .btn2 {
-    background-image: url(/photo/text-icon.png);
+    background-image: url(../../photo/text-icon.png);
     width: 80px;
     height: 70px;
     margin-bottom: 5%;
@@ -497,7 +497,7 @@
     margin-top: 2%;
   }
   .btn-start {
-    background-image: url(/photo/bg-start.png);
+    background-image: url(../../photo/bg-start.png);
     background-color: transparent;
     background-size: cover;
     color: #e0035d;

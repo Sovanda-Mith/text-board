@@ -1,6 +1,6 @@
 @media only screen and (min-width: 991px) {
   body {
-    background-image: url("/photo/bg-screen.png");
+    background-image: url(../../photo/bg-screen.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -55,7 +55,7 @@
     display: flex;
   }
   .btn {
-    background-image: url(/photo/button1.png);
+    background-image: url(../../photo/button1.png);
     background-size: cover;
     border: none;
     border-radius: 30px;
@@ -64,7 +64,7 @@
     cursor: pointer;
   }
   .btn0 {
-    background-image: url(/photo/button2.png);
+    background-image: url(../../photo/button2.png);
     background-size: cover;
     border: none;
     border-radius: 30px;
@@ -108,7 +108,7 @@
 }
 @media only screen and (max-width: 991px) {
   body {
-    background-image: url(/photo/bg-screen-mobile.png);
+    background-image: url(../../photo/bg-screen-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -166,7 +166,7 @@
   }
 
   .btn {
-    background-image: url(/photo/button1.png);
+    background-image: url(../../photo/button1.png);
     background-size: cover;
     margin-top: 10%;
     border: none;

@@ -1,11 +1,10 @@
 @media only screen and (min-width: 991px) {
   body {
-    background-image: url("/photo/bg-screen.png");
+    background-image: url(../../photo/bg-screen.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    overflow-x: hidden;
   }
 
   .container {
@@ -48,48 +47,56 @@
 
 @media only screen and (max-width: 991px) {
   body {
-    background-image: url("/photo/bg-screen-mobile.png");
+    background-image: url(../../photo/bg-screen-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   .container {
     width: 100%;
-    height: 100%;
-  }
-
-  button {
-    position: relative;
-    left: 250px;
-    top: -90px;
-  }
-  img {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .Themes {
-    margin-top: 400px;
-    margin-left: 200px;
-    font-size: 150px;
+    font-size: 75px;
+    margin: 200px 0 0 0;
+    text-align: center;
     font-family: "Jolly Lodger";
     color: #fdbff8;
     -webkit-text-stroke: 1px #fe259b;
   }
+
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  img {
+    width: 100px; /* or use percentage: width: 50%; */
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+
   .setting {
-    background-color: transparent;
-    border-color: transparent;
-    position: absolute;
-    top: 290px;
-    left: 580px;
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    background: none;
+    border: none;
   }
 
   .setting > img {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
   }
 }

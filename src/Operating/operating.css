@@ -1,6 +1,6 @@
 @media only screen and (min-width: 991px) {
   body {
-    background-image: url("/photo/bg-homescreen.png");
+    background-image: url(../../photo/bg-homescreen.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -43,7 +43,7 @@
 }
 @media only screen and (max-width: 991px) {
   body {
-    background-image: url("/photo/bg-homescreen-mobile.png");
+    background-image: url("../../photo/bg-homescreen-mobile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -93,8 +93,14 @@
   92% {
     color: #fdbff8;
     -webkit-text-stroke: 3px #fe259b;
-    text-shadow: 0 0 5px #fd66b9, 0 0 5px #fd66b9, 0 0 5px #fd66b9,
-      0 0 5px #fd66b9, 0 0 5px #fd66b9, 0 0 5px #fd66b9, 0 0 5px #fd66b9,
+    text-shadow:
+      0 0 5px #fd66b9,
+      0 0 5px #fd66b9,
+      0 0 5px #fd66b9,
+      0 0 5px #fd66b9,
+      0 0 5px #fd66b9,
+      0 0 5px #fd66b9,
+      0 0 5px #fd66b9,
       0 0 6px #fd66b9;
   }
 
@@ -110,8 +116,14 @@
   100% {
     color: #fdbff8;
     -webkit-text-stroke: 3px #fe259b;
-    text-shadow: 0 0 10px #fd66b9, 0 0 11px #fd66b9, 0 0 12px #fd66b9,
-      0 0 13px #fd66b9, 0 0 14px #fd66b9, 0 0 15px #fd66b9, 0 0 17px #fd66b9,
+    text-shadow:
+      0 0 10px #fd66b9,
+      0 0 11px #fd66b9,
+      0 0 12px #fd66b9,
+      0 0 13px #fd66b9,
+      0 0 14px #fd66b9,
+      0 0 15px #fd66b9,
+      0 0 17px #fd66b9,
       0 0 18px #fd66b9;
   }
 
