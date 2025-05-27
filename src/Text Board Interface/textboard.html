@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="textboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Jolly Lodger"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khmer&family=Konkhmer+Sleokchher&family=Noto+Sans+Khmer:wght@100..900&family=Noto+Serif+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moul&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Siemreap&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <a href="../Themes/themes.html">
+          <button class="light"><img src="/photo/light.png" /></button>
+        </a>
+        <div class="theme">Themes</div>
+        <a href="../About/about.html">
+          <button class="setting">
+            <img src="/photo/settings.png" />
+          </button>
+        </a>
+        <canvas id="scrolltext"> </canvas>
+        <canvas id="full-canvas"></canvas>
+        <img
+          src="/photo/default-bg1.png"
+          alt="default-bg1"
+          class="default-bg1"
+        />
+        <form id="input-form">
+          <div class="inputwrapper">
+            <div class="text">
+              <label for="input-text">Input text</label>
+              <input type="text" id="input-text" class="input-text" />
+            </div>
+            <div class="speed-size">
+              <div class="speed">
+                <label for="speed">Speed</label>
+                <input
+                  type="range"
+                  id="speed"
+                  min="1"
+                  max="5"
+                  class="R-slider"
+                />
+              </div>
+              <div class="size">
+                <label for="size">Size</label>
+                <input
+                  type="range"
+                  id="size"
+                  min="12"
+                  max="64"
+                  class="R-slider"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="anime-board-bg-text">
+            <div class="anime-board">
+              <div class="anime-style">
+                <label for="animation-style">Select an animation style</label>
+                <select id="animation-style" class="anime-select">
+                  <option value="left">Left To Right</option>
+                  <option value="right">Right To Left</option>
+                </select>
+              </div>
+              <div class="bg-text">
+                <button class="btn1 collapsible" type="button" id="btn-bg">
+                  <div class="bg-g">Background</div>
+                </button>
+                <div id="background-content">Choose a background</div>
+                <button class="btn2 collapsible" type="button" id="btn-text">
+                  <div class="text-t">Text</div>
+                </button>
+                <div id="text-content">
+                  <select id="select-font">
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="monospace">monospace</option>
+                    <option value="Gill Sans">Gill Sans</option>
+                    <option value="Segeo UI">Segeo UI</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Cursive">Cursive</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="Cambria">Cambria</option>
+                    <option value="Jolly Lodger">Jolly Lodger</option>
+                    <option value="Konkhmer Sleokchher">
+                      Konkhmer Sleokchher
+                    </option>
+                    <option value="Noto Serif Khmer">Noto Serif Khmer</option>
+                    <option value="Noto Sans Khmer">Noto Serif Khmer</option>
+                    <option value="Khmer">Khmer</option>
+                    <option value="Battambang">Battambang</option>
+                    <option value="Siemreap">Siemreap</option>
+                    <option value="Moul">Moul</option>
+                  </select>
+                  <div
+                    id="color-input-div"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <label for="color-input">Select a color</label>
+                    <input type="color" id="color-input" />
+                  </div>
+                  <div
+                    id="stroke-color-input-div"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <label for="stroke-color-input">
+                      Input a stroke color
+                    </label>
+                    <input type="color" id="stroke-color-input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="start">
+              <button type="submit" class="btn-start">Start</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+@media only screen and (min-width: 991px) {
+  body {
+    background-image: url("/photo/bg-screen.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .createnew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trendingTheme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-trend {
+    color: rgb(255, 255, 255);
+    font-family: "Jolly Lodger";
+    margin-right: 50%;
+    margin-top: 1%;
+    font-size: 75px;
+  }
+  .recent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-recent {
+    color: rgb(255, 255, 255);
+    font-family: "Jolly Lodger";
+    margin-right: 50%;
+    font-size: 75px;
+  }
+  .no-re {
+    margin-top: 1%;
+    color: rgb(255, 255, 255);
+    font-family: "Jolly Lodger";
+    font-size: 50px;
+  }
+  .Group {
+    margin-top: -7%;
+    gap: 100px;
+    display: flex;
+  }
+  .btn {
+    background-image: url(/photo/button1.png);
+    background-size: cover;
+    border: none;
+    border-radius: 30px;
+    height: 300px;
+    width: 400px;
+    cursor: pointer;
+  }
+  .btn0 {
+    background-image: url(/photo/button2.png);
+    background-size: cover;
+    border: none;
+    border-radius: 30px;
+    height: 300px;
+    width: 400px;
+    cursor: pointer;
+  }
+
+  img {
+    width: 150px;
+    height: 105px;
+    padding: 5px;
+  }
+  .setting {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 5%;
+    margin-left: 80%;
+  }
+
+  .setting > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .light {
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+  }
+
+  .light > img {
+    visibility: hidden;
+    width: 0px;
+  }
+
+  .theme-t {
+    visibility: hidden;
+    width: 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body {
+    background-image: url(/photo/bg-screen-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .createnew {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .create {
+    margin-top: 30%;
+  }
+
+  .trendingTheme {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-trend {
+    color: rgb(255, 255, 255);
+    font-family: "Jolly Lodger";
+    font-size: 25px;
+    margin-top: -5%;
+    margin-right: 50%;
+  }
+  .recent {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-recent {
+    color: rgb(255, 255, 255);
+    font-family: "Jolly Lodger";
+    font-size: 25px;
+    margin-top: 5%;
+    margin-right: 50%;
+  }
+  .no-re {
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+    font-family: "Jolly Lodger";
+    font-size: 25px;
+  }
+
+  .btn {
+    background-image: url(/photo/button1.png);
+    background-size: cover;
+    margin-top: 10%;
+    border: none;
+    border-radius: 30px;
+    height: 150px;
+    width: 200px;
+    cursor: pointer;
+  }
+  .btn0 {
+    visibility: hidden;
+    width: 0px;
+  }
+  button {
+    margin-top: 10%;
+  }
+  img {
+    width: 70px;
+    height: 70px;
+    padding: 1px;
+  }
+  .setting {
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+  }
+
+  .setting > img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .light {
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    top: 90px;
+    right: 70px;
+  }
+
+  .light > img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .theme-t {
+    color: aliceblue;
+    font-family: "Jolly Lodger";
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: -45px;
+  }
+}

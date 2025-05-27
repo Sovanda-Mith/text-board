@@ -1,0 +1,122 @@
+@media only screen and (min-width: 991px) {
+  body {
+    background-image: url("/photo/bg-homescreen.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  h1 {
+    position: absolute;
+    top: -75px;
+    font-family: "Jolly Lodger";
+    font-size: 300px;
+    color: #fdbff8;
+    -webkit-text-stroke: 3px #fe259b;
+  }
+
+  h1 span {
+    animation: animate 2.5s linear infinite;
+  }
+
+  h2 {
+    position: absolute;
+    top: 150px;
+    font-family: "Jolly Lodger";
+    font-size: 320px;
+    color: #fdbff8;
+    -webkit-text-stroke: 3px #fe259b;
+  }
+
+  h2 span {
+    animation: animate 2s linear infinite;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body {
+    background-image: url("/photo/bg-homescreen-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  h1 {
+    position: absolute;
+    top: 90px;
+    display: flex;
+    font-size: 200px;
+    font-family: "Jolly Lodger";
+  }
+
+  h1 span {
+    animation: animate 2.5s linear infinite;
+  }
+
+  h2 {
+    position: absolute;
+    top: 300px;
+    display: flex;
+    font-size: 190px;
+    font-family: "Jolly Lodger";
+  }
+
+  h2 span {
+    animation: animate 2s linear infinite;
+  }
+}
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #fdbff8;
+    -webkit-text-stroke: 3px #fe259b;
+    text-shadow: 0 0 5px #fd66b9, 0 0 5px #fd66b9, 0 0 5px #fd66b9,
+      0 0 5px #fd66b9, 0 0 5px #fd66b9, 0 0 5px #fd66b9, 0 0 5px #fd66b9,
+      0 0 6px #fd66b9;
+  }
+
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fdbff8;
+    -webkit-text-stroke: 3px #fe259b;
+    text-shadow: 0 0 10px #fd66b9, 0 0 11px #fd66b9, 0 0 12px #fd66b9,
+      0 0 13px #fd66b9, 0 0 14px #fd66b9, 0 0 15px #fd66b9, 0 0 17px #fd66b9,
+      0 0 18px #fd66b9;
+  }
+
+  100% {
+    color: transparent;
+    box-shadow: none;
+  }
+}

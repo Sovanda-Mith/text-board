@@ -1,0 +1,95 @@
+@media only screen and (min-width: 991px) {
+  body {
+    background-image: url("/photo/bg-screen.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  button {
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+  }
+
+  .Themes {
+    margin-top: 10%;
+    margin-left: 50%;
+    font-size: 150px;
+    font-family: "Jolly Lodger";
+    color: #fdbff8;
+    -webkit-text-stroke: 1px #fe259b;
+  }
+  .setting {
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 3%;
+    right: 1%;
+  }
+
+  .setting > img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    background-image: url("/photo/bg-screen-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  button {
+    position: relative;
+    left: 250px;
+    top: -90px;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  .Themes {
+    margin-top: 400px;
+    margin-left: 200px;
+    font-size: 150px;
+    font-family: "Jolly Lodger";
+    color: #fdbff8;
+    -webkit-text-stroke: 1px #fe259b;
+  }
+  .setting {
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 290px;
+    left: 580px;
+  }
+
+  .setting > img {
+    width: 100px;
+    height: 100px;
+  }
+}

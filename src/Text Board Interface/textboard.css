@@ -1,0 +1,612 @@
+@media only screen and (min-width: 991px) {
+  body {
+    background-image: url(/photo/bg-screen.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  #full-canvas {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  #background-content {
+    display: none;
+    color: #ffffff;
+    border-radius: 3%;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    width: 15%;
+    height: 70%;
+    background-image: linear-gradient(to right, #e0035d, #fffe4b);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    overflow: auto;
+  }
+
+  #background-content img {
+    width: 150px;
+    height: 75px;
+    border-radius: 5px;
+    border: 5px solid #ffffff;
+    cursor: pointer;
+  }
+
+  #text-content {
+    display: none;
+    color: #ffffff;
+    border-radius: 3%;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    width: 15%;
+    height: 40%;
+    background-image: linear-gradient(to right, #e0035d, #fffe4b);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    overflow: auto;
+  }
+
+  #select-font {
+    background-image: linear-gradient(to right, #fffe4b, #e0035d);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    border-radius: 5px;
+    font-size: 30px;
+    width: 80%;
+    padding-left: 10px;
+    height: 50px;
+    color: aliceblue;
+  }
+
+  #select-font > option {
+    background-color: #e0035d;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+
+  .collapsible {
+    cursor: pointer;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: #fd66b9;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #scrolltext {
+    background-image: url(/photo/default-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 35%;
+    height: 200px;
+    margin-left: 1%;
+    margin-top: 5%;
+  }
+
+  .default-bg1 {
+    margin-top: -12%;
+    width: 750px;
+    height: 250px;
+  }
+  .inputwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+  .text {
+    display: flex;
+    gap: 100px;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 50px;
+    margin-top: 5%;
+  }
+  .input-text {
+    border-radius: 5px;
+    border: none;
+    font-size: x-large;
+    height: 75px;
+    width: 400px;
+    padding: 0 0 0 10px;
+  }
+  .speed-size {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  #input-form {
+    width: 50%;
+  }
+
+  .speed {
+    gap: 20px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 50px;
+  }
+
+  .size {
+    gap: 20px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 50px;
+  }
+
+  .R-slider {
+    appearance: none;
+    width: 80%;
+    height: 20px;
+    background: linear-gradient(to right, #e0035d, #fffe4b);
+    outline: none;
+    border-radius: 15px;
+    margin-top: 10%;
+  }
+
+  .R-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 30%;
+    height: 30px;
+    background: #e0035d;
+    border-radius: 60%;
+    cursor: pointer;
+  }
+
+  .R-slider::-moz-range-thumb {
+    width: 30%;
+    height: 30px;
+    background: #e0035d;
+    border-radius: 60%;
+    cursor: pointer;
+  }
+
+  .anime-board-bg-text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .anime-board {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .anime-style {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 25px;
+  }
+
+  .anime-select {
+    background-image: linear-gradient(to right, #fffe4b, #e0035d);
+    border-radius: 5px;
+    font-size: 30px;
+    width: 50%;
+    padding-left: 10px;
+    height: 50px;
+    color: aliceblue;
+  }
+
+  .start {
+    margin-top: 5%;
+  }
+  .anime-select > option {
+    background-color: #e0035d;
+  }
+  .bg-text {
+    display: flex;
+    margin-top: 4%;
+    width: 30%;
+    height: 100px;
+    background-image: linear-gradient(to right, #e0035d, #fffe4b);
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .btn1,
+  .btn2 {
+    margin-left: 5%;
+    background-size: cover;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  .btn1 {
+    background-image: url(/photo/bg-background.png);
+    width: 60px;
+    height: 50px;
+    margin-bottom: 10%;
+  }
+  .btn2 {
+    background-image: url(/photo/text-icon.png);
+    width: 80px;
+    height: 70px;
+    margin-bottom: 5%;
+  }
+  .bg-g {
+    margin-top: 110%;
+    margin-left: -30%;
+  }
+  .text-t {
+    margin-top: 85%;
+  }
+  .btn-start {
+    background-image: url(/photo/bg-start.png);
+    background-color: transparent;
+    background-size: cover;
+    color: #e0035d;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: xx-large;
+    border: none;
+    border-radius: 25px;
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .light {
+    background-color: transparent;
+    border-color: transparent;
+    width: 0;
+    height: 0;
+  }
+
+  .light > img {
+    width: 0px;
+  }
+
+  .setting {
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 1200px;
+    margin-top: 40px;
+  }
+
+  .setting > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .theme {
+    color: transparent;
+    width: 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body {
+    background-image: url(/photo/bg-screen-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .collapsible {
+    cursor: pointer;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: #fe259b;
+  }
+
+  #full-canvas {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #scrolltext {
+    background-image: url(/photo/default-background.png);
+    width: 60%;
+    height: 90px;
+    margin-top: 10%;
+  }
+  .default-bg1 {
+    margin-top: -100px;
+    width: 310px;
+    height: 110px;
+  }
+  .inputwraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    margin-top: 5%;
+    margin-left: 20%;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: x-large;
+  }
+  .input-text {
+    border-radius: 5px;
+    border: none;
+    font-size: x-large;
+    height: 30px;
+    width: 40%;
+    padding: 0 0 0 10px;
+  }
+  .speed-size {
+    margin-top: 5%;
+    margin-left: 20%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .speed {
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: x-large;
+  }
+  .size {
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: x-large;
+  }
+  .R-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    height: 15px;
+    background: linear-gradient(to right, #e0035d, #fffe4b);
+    outline: none;
+    border-radius: 12px;
+  }
+  .R-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #e0035d;
+    border-radius: 60%;
+    cursor: pointer;
+  }
+  .R-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #e0035d;
+    border-radius: 60%;
+    cursor: pointer;
+  }
+  .anime-board-bg-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .anime-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .anime-style {
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: x-large;
+  }
+  .anime-select {
+    background-image: linear-gradient(to right, #e0035d, #fffe4b);
+    border-radius: 5px;
+    font-size: large;
+    padding-left: 10px;
+    height: 30px;
+    width: 60px;
+    color: aliceblue;
+  }
+  .anime-select > option {
+    background-color: #e0035d;
+  }
+  .bg-text {
+    display: flex;
+    margin-top: 10%;
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to right, #e0035d, #fffe4b);
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .btn1,
+  .btn2 {
+    margin-left: 5%;
+    background-size: cover;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  .btn1 {
+    background-image: url(/photo/bg-background.png);
+    width: 60px;
+    height: 50px;
+    margin-bottom: 10%;
+  }
+  .btn2 {
+    background-image: url(/photo/text-icon.png);
+    width: 80px;
+    height: 70px;
+    margin-bottom: 5%;
+  }
+  .bg-g {
+    margin-top: 110%;
+    margin-left: -30%;
+  }
+  .text-t {
+    margin-top: 85%;
+  }
+  .start {
+    margin-top: 2%;
+  }
+  .btn-start {
+    background-image: url(/photo/bg-start.png);
+    background-color: transparent;
+    background-size: cover;
+    color: #e0035d;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: xx-large;
+    border: none;
+    border-radius: 30px;
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+  }
+  .light {
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    top: 170px;
+    right: 130px;
+  }
+
+  .light > img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .setting {
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 170px;
+    right: 20px;
+  }
+
+  .setting > img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .theme {
+    color: aliceblue;
+    font-family: "Jolly Lodger";
+    margin-top: 170px;
+    margin-left: -260px;
+  }
+
+  #background-content {
+    display: none;
+    color: #ffffff;
+    border-radius: 3%;
+    font-size: 8px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    width: 85%;
+    height: 10%;
+    background-image: linear-gradient(to right, #e0035d, #fffe4b);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    overflow: auto;
+  }
+
+  #background-content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 5px solid #ffffff;
+    cursor: pointer;
+  }
+
+  #text-content {
+    display: none;
+    color: #ffffff;
+    border-radius: 3%;
+    font-size: 8px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    width: 85%;
+    height: 10%;
+    background-image: linear-gradient(to right, #e0035d, #fffe4b);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    overflow: auto;
+  }
+
+  #color-input-div,
+  #stroke-color-input-div {
+    font-size: 12px;
+  }
+
+  #select-font {
+    background-image: linear-gradient(to right, #fffe4b, #e0035d);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 40%;
+    padding-left: 10px;
+    height: 50px;
+    color: aliceblue;
+  }
+
+  #select-font > option {
+    background-color: #e0035d;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+}
