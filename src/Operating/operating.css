@@ -43,7 +43,7 @@
 }
 @media only screen and (max-width: 991px) {
   body {
-    background-image: url("../../photo/bg-homescreen-mobile.png");
+    background-image: url(../../photo/bg-homescreen-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

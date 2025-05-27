@@ -1,6 +1,6 @@
 @media only screen and (min-width: 991px) {
   body {
-    background-image: url("/photo/bg-screen.png");
+    background-image: url(../../photo/bg-screen.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -39,7 +39,7 @@
     color: aliceblue;
     border-radius: 10px;
     border: none;
-    background-image: url(/photo/btn-style.png);
+    background-image: url(../../photo/btn-style.png);
     background-size: cover;
     font-size: 55px;
     margin: 1%;
@@ -86,7 +86,7 @@
 
 @media only screen and (max-width: 991px) {
   body {
-    background-image: url("/photo/bg-about-mobile.png");
+    background-image: url(../../photo/bg-about-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -128,7 +128,7 @@
     color: aliceblue;
     border-radius: 14px;
     border: none;
-    background-image: url(/photo/btn-style.png);
+    background-image: url(../../photo/btn-style.png);
     background-size: cover;
     font-size: 20px;
     font-family: "Jolly Lodger";
