@@ -68,13 +68,13 @@ sizeInput.addEventListener("input", (e) => {
 });
 
 const gifs = [
-  "/photo/bg-blinking-star.gif",
-  "/photo/disco.gif",
-  "/photo/heart.gif",
-  "/photo/tea.jpg",
-  "/photo/merry-chrismas.gif",
-  "/photo/free-happy-birthday.gif",
-  "/photo/firework.gif",
+  "../../photo/bg-blinking-star.gif",
+  "../../photo/disco.gif",
+  "../../photo/heart.gif",
+  "../../photo/tea.jpg",
+  "../../photo/merry-chrismas.gif",
+  "../../photo/free-happy-birthday.gif",
+  "../../photo/firework.gif",
 ];
 
 gifs.forEach((gif) => {
