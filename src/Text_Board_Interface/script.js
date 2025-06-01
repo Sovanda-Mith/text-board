@@ -67,14 +67,18 @@ sizeInput.addEventListener("input", (e) => {
   c.font = `${size}px ${font}`;
 });
 
+const basePath = window.location.pathname.split("/")[1]
+  ? `/${window.location.pathname.split("/")[1]}`
+  : "";
+
 const gifs = [
-  "../../photo/bg-blinking-star.gif",
-  "../../photo/disco.gif",
-  "../../photo/heart.gif",
-  "../../photo/tea.jpg",
-  "../../photo/merry-chrismas.gif",
-  "../../photo/free-happy-birthday.gif",
-  "../../photo/firework.gif",
+  `${basePath}/photo/bg-blinking-star.gif`,
+  `${basePath}/photo/disco.gif`,
+  `${basePath}/photo/heart.gif`,
+  `${basePath}/photo/tea.jpg`,
+  `${basePath}/photo/merry-chrismas.gif`,
+  `${basePath}/photo/free-happy-birthday.gif`,
+  `${basePath}/photo/firework.gif`,
 ];
 
 gifs.forEach((gif) => {
